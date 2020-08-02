@@ -2,40 +2,94 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Registration</title>
   </head>
   <body>
-    <table cellspacing="20">
-      <td><img src="images/baking-logo.jpg" alt="baking"></td>
-      <td>
-        <h1>John Lester Corrales</h1>
-        <p><em><strong>Founder and CEO of <a href="https://www.google.com">Marshie Bakes</a></strong></em></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum elementum ligula in posuere. Nam accumsan augue dui, elementum sollicitudin nibh sagittis quis. Nam eu mauris ornare, dictum nisl in, dictum mauris. Ut eu convallis elit. Nam rhoncus rutrum auctor. Praesent tempor, sem et gravida tincidunt, est est venenatis dolor, nec molestie nunc lacus ac lorem. Nunc interdum varius vestibulum. Vivamus nunc nibh, vestibulum in venenatis non, posuere sed sapien. Integer sed feugiat mi.</p>
-      </td>
-    </table>
-    <hr>
-    <h3><a href="skills.html">Skills</a></h3>
-    <h3><a href="hobbies.html">Hobbies</a></h3>
-    <hr>
-    <h3>Work Experience</h3>
-    <table>
-      <thead>
-        <th>Dates</th>
-        <th>Work</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2010 - 2013</td>
-          <td>Senior Software Engineer</td>
-        </tr>
-        <tr>
-          <td>2014 - 2017</td>
-          <td>Software Consultant</td>
-        </tr>
-      </tbody>
-      <tfoot>
-
-      </tfoot>
-    </table>
+    <div class="container-fluid">
+      <div class="container-fluid pt-3">
+        <div class="container-sm pl-0 pr-0">
+          <nav class="navbar navbar-expand-sm">
+            <ul class="nav nav-tabs">
+              <li class="nav-item pr-2">
+                  <a data-toggle="tab" href="#employeeDiv" class="nav-link active">Employee</a>
+              </li>
+              <li class="nav-item pr-2">
+                  <a data-toggle="tab" href="#apsDiv" class="nav-link">APS (Agensi Pekerjaan Swasta)</a>
+              </li>
+              <li class="nav-item pr-2">
+                  <a data-toggle="tab" href="#medicalDiv" class="nav-link">Medical Center</a>
+              </li>
+              <li class="nav-item pr-2">
+                  <a data-toggle="tab" href="#countryDiv" class="nav-link">Source Country Agent</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container-sm border pb-3">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="tab-content">
+                <div id="employeeDiv" class="tab-pane my-tab-pane active in">
+                  <div class="form-group pt-3">
+                    <div class="col-md pb-2">
+                      <!--label for="compName">Company Name</label-->
+                      <input type="text" class="form-control form-control-sm" placeholder="Enter Company Name" name="" value="">
+                    </div>
+                    <div class="col-md pb-2">
+                      <!--label for="rocNo">ROC Number</label-->
+                      <input type="text" class="form-control form-control-sm" placeholder="Enter ROC Number" name="" value="">
+                    </div>
+                    <div class="col-md pb-2">
+                      <!--label for="mobileNo">Mobile Number</label-->
+                      <input type="tel" class="form-control form-control-sm" placeholder="Enter Mobile Number" name="" value="">
+                    </div>
+                    <div class="col-md pb-2">
+                      <!--label for="emailAdd">Email Address</label-->
+                      <input type="email" class="form-control form-control-sm" placeholder="Enter Email Address" name="" value="">
+                    </div>
+                    <div class="col-md pb-2">
+                      <!--label for="ownerName">Owner Name</label-->
+                      <input type="text" class="form-control form-control-sm" placeholder="Enter Owner Name" name="" value="">
+                    </div>
+                    <div class="col-md pb-1">
+                      <button class="btn btn-info btn-sm btn-block" type="button">Register</button>
+                    </div>
+                    <div class="col-md">
+                      <button class="btn btn-danger btn-sm btn-block" type="button">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="apsDiv" class="tab-pane my-tab-pane fade">
+                  <h3>APS Section</h3>
+                </div>
+                <div id="medicalDiv" class="tab-pane my-tab-pane fade">
+                  <h3>Medical Section</h3>
+                </div>
+                <div id="countryDiv" class="tab-pane my-tab-pane fade">
+                  <h3>Country Section</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-sm pt-4">
+          <div class="row">
+            <div class="col">
+              <input type="checkbox" class="form-check-input ml-0 pr-4 mt-2" name="" value="">
+              <p class="pl-4"><small class="text-muted text-justify ">
+              I hereby declare that the information furnished above is true
+              to the best of my knowledge. I do hereby declare that above
+              particulars of information and facts stated are true, correct
+              and complete to the best of my knowledge and belief.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </html>
